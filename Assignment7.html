@@ -1,0 +1,37 @@
+<html>
+    <head>
+</head>  
+<script>
+    var die1value = 6;
+    var die2value = 6;
+    var rollCount = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+    function rollDice() {
+        die1value = Math.floor(Math.random()*6+1);
+        die2value = Math.floor(Math.random()*6+1);
+        document.getElementById("die1").src="" + die1value +".png";
+        document.getElementById("die2").src="" + die2value +".png";
+        document.getElementById("totalRoll").innerHTML="You Rolled" + (die1value+die2value);
+        rollCount[die1value+die2value]++;
+        var maxValue = 2;
+        for(let i=2,i<=12,i++)  {
+            if (rollCount[i] > rollCount [maxValue] )   [
+                maxValue=i;
+            ]
+        }
+        document.getElementById("mostFrequentDisplay").innerHTML= "The Most Frequently Rolled Value " + maxValue;
+    }
+
+    function determineHowMany() {
+        document.getElementById("howManyDisplay").src="" + die1value +".png";
+        var whichNumber = 
+        document.getElementById("howManyDisplay2").innHTML = "You have rolled " + whichNumber + "and" 
+    }
+
+    </script>  
+<body>
+    <img>
+    <p></p>
+    <button id="RollButton"> </button>
+</body>
+</html>
